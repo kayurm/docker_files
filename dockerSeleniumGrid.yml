@@ -3,6 +3,10 @@
 # Add the `-d` flag at the end for detached execution
 # to scale nodes: either set NODE_MAX_INSTANCES and NODE_MAX_SESSION in a node's environment, or use Docker scale command (see below)
 # full command would be: docker-compose -f "path\dockerComposeSeleniumGrid.yml" up -d --scale chrome=2 --scale firefox=2
+
+# to see the console:
+# http://{url}:4444/grid/console
+
 version: "3"
 services:
   selenium-hub:
